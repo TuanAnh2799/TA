@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Detail</title>
+    
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <div class="navbar">
+                
+                <div class="logo" onclick="homePage()">
+                    <img src="img/logoTA.png" width="125px">
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allProduct.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="Login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img style="margin-left: 15px;" src="images/cart.png" width="30px" height="30px" onclick="myCart()">
+                
+            </div>
+            
+        </div>
+        <div class="container2">
+            <div class="photo">
+                <div class="photo-main">
+                    <img src="./images//gallery-1.jpg" width="50.5%" id="photoIMG">
+                </div>
+                <div class="photo-small">
+                    <img id="photo1" src="./images/gallery-2.jpg" width="16.5%" class="smallIMG">
+                    <img id="photo2" src="./images/gallery-3.jpg" width="16.5%" class="smallIMG">
+                    <img id="photo3" src="./images/gallery-4.jpg" width="16.5%" class="smallIMG">
+                  
+                </div>
+            </div>
+            <div class="info">
+                <div class="nameProduct">
+                    <h1>Bộ quần áo thể thao Arsenal.</h1>
+                    <h3>Price: 160.000 VNĐ</h3>
+                </div>
+                <div class="chooseColor">
+                    
+                    <input type="radio" name="color" value="red"><label>Red</label>
+                    <input type="radio" name="color" value="yellow"><label>Yellow</label>
+                    <input type="radio" name="color" value="black"><label>Black</label>
+                    <input type="radio" name="color" value="blue"><label>Blue</label>
+                </div>
+                <div class="chooseSize">
+                    <input type="number" size="20" value="1"> 
+                    <select>
+                        <option>Choose size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <br>
+                    <a href="cart.html" class="btn">Add To Cart</a>
+                </div>
+                <div class="detail">
+                    <h1>Product Details<i class="fa fa-indent"></i> </h1>
+                    <p>Size L : 1m55- 1m68   45- 63kg <br>
+                        Size Xl: 1m68 - 1m72  63kg - 72kg
+                        <br>
+                        Size Xl: 1m73 - 1m82    72kg - 82kg</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var photoIMG = document.getElementById('photoIMG');
+            var smallIMG = document.getElementsByClassName('smallIMG');
+
+            smallIMG[0].onclick = function(){
+                photoIMG.src = smallIMG[0].src;
+            }
+            smallIMG[1].onclick = function(){
+                photoIMG.src = smallIMG[1].src;
+            }
+            smallIMG[2].onclick = function(){
+                photoIMG.src = smallIMG[2].src;
+            }
+            function homePage() {
+                 window.location.href = "index.html";
+            }
+            function myCart() {
+                 window.location.href = "cart.html";
+            }
+        </script>
+
+        <div class="moreProduct">
+            <div class="title">
+                <h1>Related Products</h1>
+            <a href="allProduct.html">View more</a>
+            </div>
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>Áo Milan Xanh</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 150.000 VND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Áo đổi tuyển Đức</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Price: 120.000 VND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Áo Milan trắng đỏ phong cách</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 130.000 VND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Áo Manchester United đỏ</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Price: 145.000 VND</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h1>Download Our App</h1>
+                        <p>Download App for Android and IOS mobile phone.</p>
+                    </div>
+                    <div class="footer-col">
+                        <img src="images/app-store.png">
+                        <img src="images/play-store.png">
+                    </div>
+                    <div class="footer-col-1">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li>Sales</li>
+                            <li>Blog Post</li>
+                            <li>Join group</li>
+                            <li>About me</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <li>Youtube</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

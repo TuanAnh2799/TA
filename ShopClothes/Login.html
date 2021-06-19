@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login Now</title>
+    <script>
+        
+        function login()
+        {
+            document.getElementById("RegForm").style.display='none';
+            document.getElementById("LoginForm").style.display='block';
+            document.getElementById('LoginSpan').style.borderBottom= '5px solid rgb(233, 129, 11)';
+            document.getElementById('RegSpan').style.borderBottom= 'none';
+            
+        }
+        function register()
+        {
+            document.getElementById("RegForm").style.display='block';
+            document.getElementById("LoginForm").style.display='none';
+            document.getElementById('LoginSpan').style.borderBottom= 'none';
+            document.getElementById('RegSpan').style.borderBottom= '5px solid rgb(233, 129, 11)';
+
+        }
+        function home() {
+                 window.location.href = "index.html";
+            }
+   </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo" onclick="home()">
+                    <img src="img/logoTA.png" width="145px" height="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allProduct.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="Login.html">Account</a></li>
+                    </ul>
+                </nav>
+               
+            </div>
+            
+        </div>
+        <div class="col-2">
+            <img style="width: 1200px; height: 1000px;float: left;" src="img/image1.png">
+            <div class="formContainer">
+                <span id="LoginSpan" onclick="login()">Login</span>
+                <span id="RegSpan" onclick="register()">Register</span>
+
+                <form id="LoginForm">
+                    <input type="text" placeholder="Username..." size="30"/>
+                    <br>
+                    <input type="text" placeholder="Password..." size="30"/>
+                    <br>
+                    <button type="submit" class="btn">Login</button>
+                    <br>
+                    <br>
+                    <a href="#">Forgot password?</a>
+                </form>
+
+                <form id="RegForm">
+                    <input type="text" placeholder="Username..." size="30"/>
+                    <br>
+                    <input type="email" placeholder="Email..." size="30"/>
+                    <br>
+                    <input type="text" placeholder="Password..." size="30"/>
+                    <br>
+                    <button class="btn" type="submit">Register</button>
+                    <br>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

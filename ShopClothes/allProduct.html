@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>All Products</title>
+    <script>
+        function detail() {
+                 window.location.href = "detail.html";
+            }
+            function home() {
+                 window.location.href = "index.html";
+            }
+            function myCart() {
+                 window.location.href = "cart.html";
+            }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo" onclick="home()">
+                    <img src="img/logoTA.png" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allProduct.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="Login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img style="margin-left: 15px;" src="images/cart.png" width="30px" height="30px" onclick="myCart()">
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="product-Wrapper">
+        <h2 style="font-size: 60px;text-align: center;">All Products</h2>
+        <select id="select1">
+            <option>0 VND - 50.000 VND</option>
+            <option>50.000 VND - 100.000 VND</option>
+            <option>100.000 VND - 500.000 VND</option>
+            <option>Over 500.000 VND</option>
+        </select>
+        <select id="select2">
+            <option>Default Shorting</option>
+            <option>Short by price</option>
+            <option>Short by popularity</option>
+            <option>Short by rating</option>
+        </select>
+        <div class="small-contain-2">
+            
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-1.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 50.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-2.jpg">
+                <h4>Black shoes leagend</h4>
+                <div class="rating">
+                    <p1><b>Rating::</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Giá: 50.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-3.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 50.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-4.jpg">
+                <h4>Green Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Giá: 90.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-5.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 150.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-6.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 50.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-7.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 100.000đ</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-8.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Giá: 50.000đ</p>
+            </div>
+        </div>
+        <!--Next page-->
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1>Download Our App</h1>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                </div>
+                <div class="footer-col">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+                <div class="footer-col-1">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li>Sales</li>
+                        <li>Blog Post</li>
+                        <li>Join group</li>
+                        <li>About me</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

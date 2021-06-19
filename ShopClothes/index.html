@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div style="position: relative;">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    
+                    <div class="logo" onclick="home()">
+                        <img src="img/logoTA.png" width="125px">
+                    </div>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="allProduct.html">Products</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="Login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img style="margin-left: 15px;" src="images/cart.png" width="30px" height="30px"  onclick="myCart()">
+                    <!--Search-->
+                    <div class="timkiem">
+                        <input type="text" class="search-text" name="" placeholder="Tìm kiếm...">
+                        <a href="#" class="search-btn">
+                            <i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!--Search-->
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Tuấn Anh Shop</h1>
+                        <p>
+                            Ghé thăm, theo dõi shop để cập nhật nhiều mẫu đẹp các bạn nhé!
+                        </p>
+                        <a href="#" class="btn-timhieu">Explore &#8594;</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/image1.png" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Image slide start-->
+        <div class="wrap-slide">
+            <div class="slider">
+                <h1 style="color: red; font-size: 50px;">HOT</h1>
+                <div class="slides">
+                  <!--radio buttons start-->
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--radio buttons end-->
+                  <!--slide images start-->
+                  <div class="slide first">
+                    <img src="img/1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="img/2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="img/3.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <!--slide images end-->
+                  <!--automatic navigation start-->
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                  </div>
+                  <!--automatic navigation end-->
+                </div>
+                
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+              </div>
+              <!--image slider end-->
+          
+              <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                  counter = 1;
+                }
+              }, 5000);
+
+              function detail(){
+                 window.location.href = "detail.html";
+              }
+              function home(){
+                 window.location.href = "index.html";
+              }
+
+              function myCart() {
+                 window.location.href = "cart.html";
+            }
+              </script>
+
+                <img src="img/pin-locate-map.png" width="100px" height="90px"/>
+              <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d927.5091815077162!2d105.80797501163948!3d21.58448948265489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1617436216424!5m2!1svi!2s" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" width="900" height="500"></iframe>
+              </div>
+        </div>
+        <!--Image slide end-->
+
+
+        <div class="small-contain-2">
+            <h2 style="font-size: 60px;text-align: center;">New Products</h2>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-1.jpg">
+                <h4>Áo Milan Xanh</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 150.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-2.jpg">
+                <h4>Áo đổi tuyển Đức</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Price: 120.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-3.jpg">
+                <h4>Áo Milan trắng đỏ phong cách</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 130.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-4.jpg">
+                <h4>Áo Manchester United đỏ</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Price: 145.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-5.jpg">
+                <h4>Áo Juventus 1</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 150.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-6.jpg">
+                <h4>Áo Juventus 2</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 170.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-7.jpg">
+                <h4>Việt Nam</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 100.000 VND</p>
+            </div>
+            <div class="col-4" onclick="detail()">
+                <img src="images/product-8.jpg">
+                <h4>Mancity xanh</h4>
+                <div class="rating">
+                    <p1><b>Rating:</b></p1>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Price: 160.000 VND</p>
+                
+            </div>
+            
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+        <!--Dịch Vụ-->
+
+        <div class="offer">
+            <div class="wrapper">
+                <div class="wrap-img1">
+                    <img id="imgWatch" src="images/exclusive.png"/>
+                </div>
+                <div class="wrap-img2">
+                    <p>Available products</p>
+                    <h1>Smart Mi Band 4</h1>
+                    <small>Loving this watchface.Heart rate, date and steps</small>
+                    <br>
+                    <a href="#" class="btn-timhieu">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+        <!--FEEDBACK-->
+        <div class="FeedBack-Wrapper">
+            <div class="feedback">
+                <div class="col-7">
+                    <i class="fa fa-quote-left"></i>
+                    <h4>My experience was amazing when I decided to order online 
+                        for the first time i was confused but later I found that it was a good idea</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img style="width: 200px;height: 200px;" src="img/USER1.jpg">
+                </div>
+
+                <div class="col-7">
+                    <i class="fa fa-quote-left"></i>
+                    <h4>I am very pleased with my recent T shirts purchase. They were reasonably priced,
+                         comfortable,lenghtly and survived laundering. We will do business again.</h4>
+                    <div class="rating">
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img style="width: 200px;height: 200px;" src="img/USER2.jpg">
+                </div>
+
+                <div class="col-7">
+                    <i class="fa fa-quote-left"></i>
+                    <h4>The Mi Band 4 can show call, text, email, and just about any other notification on your smartphone. Notifications come through to the Mi Band 4 right away.I love it! </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img style="width: 200px;height: 200px;" src="img/USER3.jpg">
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--END FEEDBACK-->
+        
+    </div>
+    <div class="brands">
+        <div class="brand-wapper">
+            <div class="roww">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1>Download Our App</h1>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                </div>
+                <div class="footer-col">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+                <div class="footer-col-1">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li>Sales</li>
+                        <li>Blog Post</li>
+                        <li>Join group</li>
+                        <li>About me</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
